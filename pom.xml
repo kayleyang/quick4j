@@ -85,6 +85,8 @@
         <!-- lib versions -->
         <junit.version>4.11</junit.version>
         <spring.version>4.0.2.RELEASE</spring.version>
+        <jedis.version>2.1.0</jedis.version>
+        <spring.redis.version>1.0.2.RELEASE</spring.redis.version>
         <mybatis.version>3.2.2</mybatis.version>
         <mybatis.spring.version>1.2.2</mybatis.spring.version>
         <mysql.connector.version>5.1.30</mysql.connector.version>
@@ -121,6 +123,18 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
             <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>${jedis.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>${spring.redis.version}</version>
         </dependency>
 
         <dependency>
